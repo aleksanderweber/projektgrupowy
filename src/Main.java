@@ -13,7 +13,12 @@ public class Main {
             case 2:
                 workToDo = new CircleField();
                 break;
-
+            case 3:
+                workToDo = new SquareField();
+                break;
+            case 4:
+                workToDo = new TrapezeField();
+            break;
             default:
                 throw new IllegalArgumentException("Operacja jest niedozwolona");
         }
@@ -25,6 +30,8 @@ public class Main {
         System.out.println("Wybierz opcje aby wykonać podprogram:");
         System.out.println("1. Liczenie pola trójkąta");
         System.out.println("2. Liczenie pola koła");
+        System.out.println("3. Liczenie pola kwadratu");
+        System.out.println("4. Liczenie pola trapezu");
         System.out.println("Twój wybór: ");
     }
 }

@@ -10,6 +10,8 @@ public class Main {
             case 1:
                 workToDo = new TriangleField();
                 break;
+            case 4: workToDo = new TrapezeField();
+            break;
 
             default:
                 throw new IllegalArgumentException("Operacja jest niedozwolona");
@@ -21,6 +23,9 @@ public class Main {
     public static void printManual(){
         System.out.println("Wybierz opcje aby wykonać podprogram:");
         System.out.println("1. Liczenie pola trójkąta");
+        System.out.println("2. Liczenie pola kwadrat");
+        System.out.println("3. Liczenie pola koła");
+        System.out.println("4. Liczenie pola trapezu");
 
         System.out.println("Twój wybór: ");
     }
